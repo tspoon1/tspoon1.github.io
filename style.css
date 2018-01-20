@@ -1,0 +1,42 @@
+body{
+  font-family: Helvetica;
+}
+
+title {
+
+}
+
+a {
+
+}
+
+h2 {
+
+}
+
+ul {
+  font-size: 16px;
+  color: rgb(255, 0, 255);
+}
+
+ol {
+  font-size: 16px;
+  color: rgb(255, 0, 255);
+}
+
+li {
+  font-size: 16px;
+  color: rgb(255, 0, 255);font-size: 16px;
+  color: rgb(255, 0, 255);
+}
+
+h1 {
+  color: blue;
+  /* background-color: yellow; */
+  /* font: italic bold 10px sans-serif ---------- shorthand!*/
+}
+
+p {
+  font-size: 16px;
+  color: rgb(255, 0, 255); /*color; or #hexcode; or rgb(255, 0, 0); */
+}
