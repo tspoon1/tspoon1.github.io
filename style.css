@@ -1,7 +1,7 @@
 body{
   font-family: Helvetica;
   background-attachment: fixed;
-  background-image: url(splash2.jpg);
+  background-image: url(IMG_4991.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +29,8 @@ p em {
 }
 
 a:link { /*pseudo-classes are attributes of the a link*/
-  color: #FF0000
+  color: #FF0000;
+  text-decoration: none;
 }
 
 a:visited {
@@ -70,7 +71,7 @@ h1 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 40px;
   color: rgb(255, 0, 255); /*color; or #hexcode; or rgb(255, 0, 0); */
 }
 
