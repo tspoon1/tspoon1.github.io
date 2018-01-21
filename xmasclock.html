@@ -1,0 +1,83 @@
+
+<html>
+	<head>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="index.html">Tim's Links Home</a>
+        </li>
+        <li>
+          <a href="3school.html">School
+          </a>
+        </li>
+        <li>
+          <a href="3crypto.html">Crypto
+          </a>
+        </li>
+        <li>
+          <a href="3youtube.html">YouTube
+          </a>
+        </li>
+        <li>
+          <a href="3college.html">College
+          </a>
+        </li>
+        <li>
+          <a href="learning.html">Learning
+          </a>
+        </li>
+        <li>
+          <a href="xmasclock.html">Christmas Countdown
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <link rel="stylesheet" type="text/css" href="xmas.css">
+    <link rel="stylesheet" href="flipclock.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fresca">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="flipclock.min.js"></script>
+		<title>How many days until Christmas?</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102058680-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102058680-1');
+</script>
+
+	</head>
+	<body>
+		<div class="clock-wrapper" style="margin-bottom:50px;margin-top:50px">
+			<div id="titleText" style="font-family: 'Fresca', serif;font-size: 70px; color:#7d7d7d">How many days until Christmas?</div>
+		</div>
+		<div class="clock-wrapper">
+			<div id="clockface"></div>
+		</div>
+
+		<script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(currentDate.getFullYear(), 11, 25);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $("#clockface").FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+			});
+		</script>
+
+	</body>
+</html>
