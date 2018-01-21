@@ -1,13 +1,47 @@
 body{
   font-family: Helvetica;
+  background-attachment: fixed;
+  background-image: url(splash2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 title {
 
 }
 
-a {
+img {
+  padding: 10px;
+  margin: auto;
+}
 
+div {
+  width: 40%;
+  padding: 20px;
+  border: 5px solid black;
+  margin: auto;
+}
+
+p em {
+  font-weight: bold;
+  color: green;
+}
+
+a:link { /*pseudo-classes are attributes of the a link*/
+  color: #FF0000
+}
+
+a:visited {
+  color: #00FF00
+}
+
+a:hover {
+  color: rgb(255,255,255);
+}
+
+a:active {
+  color: #0000FF
 }
 
 h2 {
@@ -16,7 +50,7 @@ h2 {
 
 ul {
   font-size: 16px;
-  color: rgb(255, 0, 255);
+  color: black;
 }
 
 ol {
@@ -26,8 +60,7 @@ ol {
 
 li {
   font-size: 16px;
-  color: rgb(255, 0, 255);font-size: 16px;
-  color: rgb(255, 0, 255);
+  color: black;
 }
 
 h1 {
@@ -39,4 +72,45 @@ h1 {
 p {
   font-size: 16px;
   color: rgb(255, 0, 255); /*color; or #hexcode; or rgb(255, 0, 0); */
+}
+
+.small-list {
+  list-style: none;
+}
+
+.small-list-item {
+  color: brown;
+}
+
+.sidebar {
+  float: left;
+  width: 300px;
+}
+
+.content {
+  float: right;
+  width: 800px;
+}
+
+#blueberry {
+  color: blue;
+}
+
+#strawberry {
+  color: red;
+}
+
+#link-heading {
+  color: black;
+  font-size: 1000;
+}
+
+#loyola-image {
+  height: 200px;
+  width: 200px;
+}
+
+#kairos-image {
+  height: 200px;
+  width: 200px;
 }
